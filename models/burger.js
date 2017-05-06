@@ -1,0 +1,9 @@
+
+module.exports = function(sequelize, DataTypes) {
+  var Burgers = sequelize.define("Burgers", {
+    burger_name: DataTypes.STRING,
+    devoured: DataTypes.BOOLEAN,
+    date: DataTypes.INTEGER
+  });
+  return Burgers;
+};
